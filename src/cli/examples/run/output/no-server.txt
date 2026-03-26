@@ -1,0 +1,7 @@
+Starting gemini server...
+Error: Server exited with code 1
+Server output: Warning: OPENCODE_SERVER_PASSWORD is not set; server is unsecured.
+[91m[1mError: [0mUnexpected error, check log file at /usr/local/google/home/xiaolongyang/.local/share/opencode/log/2026-02-22T070313.log for more details
+
+Failed to start server on port 4097
+

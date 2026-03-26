@@ -1,0 +1,4 @@
+description="Switch to Explore - Codebase search specialist."
+prompt = """
+@explore ${user_message}
+"""

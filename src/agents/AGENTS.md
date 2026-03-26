@@ -1,0 +1,74 @@
+# AGENTS KNOWLEDGE BASE
+
+## OVERVIEW
+
+11 AI agents for multi-model orchestration. Each agent has factory function + metadata + fallback chains.
+
+**Primary Agents** (respect UI model selection):
+- Sisyphus, Atlas, Prometheus
+
+**Subagents** (use own fallback chains):
+- Hephaestus, Oracle, Librarian, Explore, Multimodal-Looker, Metis, Momus, Sisyphus-Junior
+
+## STRUCTURE
+```
+agents/
+├── atlas.ts                    # Master Orchestrator (holds todo list)
+├── sisyphus.ts                 # Main prompt (SF Bay Area engineer identity)
+├── hephaestus.ts               # Autonomous Deep Worker (GPT 5.2 Codex, "The Legitimate Craftsman")
+├── sisyphus-junior.ts          # Delegated task executor (category-spawned)
+├── oracle.ts                   # Strategic advisor (GPT-5.2)
+├── librarian.ts                # Multi-repo research (GitHub CLI, Context7)
+├── explore.ts                  # Fast contextual grep (Grok Code Fast)
+├── multimodal-looker.ts        # Media analyzer (Gemini 3 Flash)
+├── prometheus-prompt.ts        # Planning (Interview/Consultant mode, 1283 lines)
+├── metis.ts                    # Pre-planning analysis (Gap detection)
+├── momus.ts                    # Plan reviewer (Ruthless fault-finding)
+├── dynamic-agent-prompt-builder.ts  # Dynamic prompt generation
+├── types.ts                    # AgentModelConfig, AgentPromptMetadata
+├── utils.ts                    # createBuiltinAgents(), resolveModelWithFallback()
+└── index.ts                    # builtinAgents export
+```
+
+## AGENT MODELS
+
+Agent             | Model                         | Temp | Purpose
+----------------- | ----------------------------- | ---- | -------
+Sisyphus          | `google/gemini-3.1-pro-preview` | 0.1  | Primary orchestrator (fallback: `gemini-3-flash` → `gemini-2.0-flash`)
+Hephaestus        | `google/gemini-3.1-pro-preview` | 0.1  | Autonomous deep worker, "The Legitimate Craftsman"
+Atlas             | `google/gemini-3.1-pro-preview` | 0.1  | Master orchestrator
+oracle            | `google/gemini-3.1-pro-preview` | 0.1  | Consultation, debugging
+librarian         | `google/gemini-3.1-pro-preview` | 0.1  | Docs, GitHub search
+explore           | `google/gemini-3-flash`         | 0.1  | Fast contextual grep (fallback: `gemini-2.0-flash`)
+multimodal-looker | `google/gemini-3-flash`       | 0.1  | PDF/image analysis
+Prometheus        | `anthropic/claude-opus-4-5`   | 0.1  | Strategic planning (fallback: `kimi-k2.5` → `gpt-5.2`)
+Metis             | `anthropic/claude-opus-4-5`   | 0.3  | Pre-planning analysis (fallback: `kimi-k2.5` → `gpt-5.2`)
+Momus             | `openai/gpt-5.2`              | 0.1  | Plan validation (fallback: `claude-opus-4-5`)
+Sisyphus-Junior   | `anthropic/claude-sonnet-4-5` | 0.1  | Category-spawned executor
+
+## HOW TO ADD
+1. Create `src/agents/my-agent.ts` exporting factory + metadata.
+2. Add to `agentSources` in `src/agents/utils.ts`.
+3. Update `AgentNameSchema` in `src/config/schema.ts`.
+4. Register in `src/index.ts` initialization.
+
+## TOOL RESTRICTIONS
+| Agent | Denied Tools |
+|-------|-------------|
+| oracle | write, edit, task, delegate_task, parallel_exec |
+| librarian | write, edit, task, delegate_task, call_subagent, parallel_exec |
+| explore | write, edit, task, delegate_task, call_subagent, parallel_exec |
+| multimodal-looker | Allowlist: read only |
+| Sisyphus-Junior | task, delegate_task, parallel_exec |
+
+## PATTERNS
+- **Factory**: `createXXXAgent(model: string): AgentConfig`
+- **Metadata**: `XXX_PROMPT_METADATA` with category, cost, triggers.
+- **Tool restrictions**: `createAgentToolRestrictions(tools)` or `createAgentToolAllowlist(tools)`.
+- **Thinking**: 32k budget tokens for Sisyphus, Oracle, Prometheus, Atlas.
+
+## ANTI-PATTERNS
+- **Trust reports**: NEVER trust "I'm done" - verify outputs.
+- **High temp**: Don't use >0.3 for code agents.
+- **Sequential calls**: Use `delegate_task` with `run_in_background` for exploration.
+- **Prometheus writing code**: Planner only - never implements.

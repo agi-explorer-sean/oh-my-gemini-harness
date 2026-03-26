@@ -1,0 +1,45 @@
+let serverAvailable: boolean | null = null;
+let serverCheckUrl: string | null = null;
+
+export async function isServerRunning(
+  serverUrl: string,
+  timeoutMs: number = 3000,
+): Promise<boolean> {
+  if (serverCheckUrl === serverUrl && serverAvailable === true) {
+    return true;
+  }
+
+  const healthUrl = new URL('/health', serverUrl).toString();
+  const maxAttempts = 2;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+    try {
+      const response = await fetch(healthUrl, {
+        signal: controller.signal,
+      }).catch(() => null);
+      clearTimeout(timeout);
+
+      if (response?.ok) {
+        serverCheckUrl = serverUrl;
+        serverAvailable = true;
+        return true;
+      }
+    } finally {
+      clearTimeout(timeout);
+    }
+
+    if (attempt < maxAttempts) {
+      await new Promise((r) => setTimeout(r, Math.min(250, timeoutMs)));
+    }
+  }
+
+  return false;
+}
+
+export function resetServerCheck(): void {
+  serverAvailable = null;
+  serverCheckUrl = null;
+}

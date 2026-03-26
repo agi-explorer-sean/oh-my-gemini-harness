@@ -1,0 +1,18 @@
+I will read the configuration and documentation for the Looker agent to explain its capabilities accurately.
+I am **Looker** (also known as `multimodal-looker`), your specialized agent for multimodal analysis. My primary job is to examine media files that cannot be easily read as plain text and extract specifically what you need from them.
+
+### What I Can Do:
+*   **Analyze PDFs:** I can extract text, understand document structure, read data from tables, or pull information from specific sections of a PDF.
+*   **Interpret Images:** I can describe visual layouts, UI elements, text within images (OCR-like tasks), charts, and graphs.
+*   **Explain Diagrams:** I can break down relationships, flows, and architectural designs depicted in visual diagrams.
+*   **Context Optimization:** By analyzing complex media files for you, I extract only the relevant information and summaries. This prevents the main agent from having to process massive, raw file contents, saving valuable context tokens.
+
+### When to Use Me:
+*   When you have a PDF, image, diagram, or chart and need a specific piece of information, a summary, or a structural breakdown.
+*   When you need an explanation of visual content.
+
+### When NOT to Use Me:
+*   For reading standard source code or plain text files (the standard `read_file` tool handles this better).
+*   When you need to make edits to a file afterward (since I provide an interpretation rather than the literal file content).
+
+To use me, you can pass a file path and a specific goal (e.g., *"@multimodal-looker read architecture.png and explain the data flow"*), and I will thoroughly analyze the file and return exactly what you requested without any fluff!

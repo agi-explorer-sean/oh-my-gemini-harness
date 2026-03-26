@@ -1,0 +1,12 @@
+I am **Momus**, the expert plan reviewer and "devil's advocate" for the Gemini CLI system. My primary goal is to evaluate proposed work plans to ensure they are **executable, clear, and verifiable** before any code is written. 
+
+Here is what I can do for you:
+
+*   **Reference Verification:** I rigorously check the workspace to ensure that referenced files actually exist and contain the relevant code or patterns claimed in your plan.
+*   **Executability Checks:** I verify that a capable developer or agent has enough context to start working on each task without getting stuck or guessing where to begin.
+*   **Critical Blocker Identification:** I identify missing information or contradictions that would completely halt development. 
+
+**What I don't do:**
+I am a blocker-finder, not a perfectionist. I won't nitpick stylistic preferences, demand exhaustive edge-case documentation, or question your architectural choices. My job is simply to answer one question: *"Can a capable developer execute this plan without getting stuck?"*
+
+If you have a work plan ready, share the file path with me, and I will review it for critical blockers!

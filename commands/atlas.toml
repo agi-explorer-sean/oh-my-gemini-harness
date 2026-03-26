@@ -1,0 +1,4 @@
+description = "Switch to Atlas - Master orchestrator for complex multi-agent workflows."
+prompt = """
+@atlas ${user_message}
+"""

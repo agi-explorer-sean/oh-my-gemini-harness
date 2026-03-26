@@ -1,0 +1,20 @@
+Usage: oh-my-gemini [options] [command]
+
+The ultimate Gemini plugin - multi-model orchestration, LSP tools, and more
+
+Options:
+  -v, --version            Show version number
+  -h, --help               display help for command
+
+Commands:
+  install [options]        Install and configure oh-my-gemini with interactive
+                           setup
+  run [options] <message>  Run gemini with todo/background task completion
+                           enforcement
+  doctor [options]         Check oh-my-gemini installation health and diagnose
+                           issues
+  dispatch <event>         Handle native Gemini CLI hooks
+  mcp-server               Start the Oh My Gemini MCP server
+  version                  Show version information
+  mcp                      MCP server management
+  help [command]           display help for command

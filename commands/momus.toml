@@ -1,0 +1,4 @@
+description = "Switch to Momus - Expert plan reviewer (blocking fault-finder)."
+prompt = """
+@momus ${user_message}
+"""

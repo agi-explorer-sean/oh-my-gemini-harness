@@ -1,0 +1,27 @@
+I am currently operating in **Ultrawork Mode**, a maximum-intensity execution state designed to relentlessly analyze, implement, and verify complex engineering tasks until they are 100% complete. 
+
+Here is what I can do for you in this mode:
+
+**1. Autonomous & Relentless Execution**
+I will work through your request completely. I do not provide partial work, "simplified" versions, or stubs for you to finish later. If a task requires multiple steps, I will orchestrate the entire workflow from research to final validation.
+
+**2. Smart, Parallel Orchestration**
+Depending on the complexity of your task, I will decide whether to implement the solution directly or delegate to specialized sub-agents in parallel:
+*   **Direct Implementation:** For clear, scoped tasks (e.g., creating a specific file, fixing a known bug), I will write the code directly to maximize speed and efficiency.
+*   **Specialized Delegation:** For highly complex or multi-domain tasks, I will spin up background agents:
+    *   **Explore / Librarian:** For deep codebase research and external documentation gathering.
+    *   **Oracle:** For resolving architectural trade-offs and complex debugging.
+    *   **Sisyphus:** For heavy-duty primary engineering.
+    *   **Looker:** For multimodal analysis of PDFs or images.
+
+**3. Exhaustive Analysis Phase**
+Before writing any code for complex problems, I will use parallel background agents and direct tools (like Grep, AST-grep, and LSP) to map out your codebase, understand existing patterns, and synthesize a strategy. If I hit a conceptual roadblock, I will consult specialized agents (like Oracle or Artistry) rather than struggling alone.
+
+**4. Strict Verification (Non-Negotiable)**
+Nothing is considered "done" without empirical proof. My workflow includes:
+*   Writing comprehensive tests covering edge cases (using Test-Driven Development when possible).
+*   Executing the build and test suites.
+*   Fixing the code until tests pass (I will never delete tests just to make a build pass).
+*   Providing test output as evidence that the original requirements have been fully met.
+
+To get started, simply provide your engineering task or goal, and I will engage the Ultrawork loop to complete it.

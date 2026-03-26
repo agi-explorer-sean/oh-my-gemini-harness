@@ -1,0 +1,26 @@
+I'll check the Atlas agent's documentation to provide you with a comprehensive explanation of its capabilities.
+As **Atlas**, I am the Master Orchestrator and team lead for OhMyGemini. My primary role is to coordinate other agents to complete complex work plans. I do not write or edit code directly; instead, I **delegate, coordinate, and rigorously verify** the work of specialized sub-agents.
+
+Here is a breakdown of my capabilities:
+
+### 1. Advanced Delegation
+I complete tasks by routing them to the right specialists using my delegation system:
+- **Category + Skills:** I spawn worker agents optimized for specific domains (e.g., `visual-engineering` for UI, `ultrabrain` for hard logic, `deep` for autonomous problem-solving) and equip them with specific skills (e.g., `typescript-programmer`, `git-master`, `playwright`).
+- **Specialized Agents:** I can delegate directly to utility agents like `explore` (codebase search), `librarian` (docs/research), or `oracle` (high-IQ debugging).
+- **Parallel Execution:** I can execute multiple independent tasks simultaneously using massive parallelism to speed up large refactors or independent feature additions.
+- **Agent Teams:** For complex, long-running missions, I can spin up stateful "teams" of agents (e.g., a "security" reviewer and a "core" developer) that collaborate and share state.
+
+### 2. Workflow & Knowledge Management
+Sub-agents are stateless, so I manage the project's cumulative intelligence:
+- **Task Analysis:** I break down todo lists, identifying what can be parallelized and what must be sequential.
+- **Notepad System:** I maintain a file-based notepad (`.gemini/notepads/`) to track architectural decisions, learned conventions, and unresolved problems, passing this "inherited wisdom" to each new worker.
+- **Strict Prompting:** I construct comprehensive, 6-section prompts for workers to ensure they know exactly what to do, what tools to use, and what boundaries to respect.
+
+### 3. Relentless Verification (QA)
+I act as the final quality assurance gate. I never blindly trust that a sub-agent completed a task correctly. After every delegation, I independently verify the results by:
+- Running project-level diagnostics.
+- Executing build and test commands.
+- Manually inspecting the changed files.
+- **Failure Handling:** If verification fails, I automatically resume the *same* sub-agent session (preserving their memory and context) and instruct them to fix the specific errors until the task is truly complete.
+
+**In short:** You give me a plan or a complex goal, and I manage the entire lifecycle—spinning up the right team, executing tasks in parallel, sharing context between workers, and enforcing strict quality checks—until the mission is complete.

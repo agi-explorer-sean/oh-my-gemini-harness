@@ -1,0 +1,33 @@
+The `@explore` agent is a specialized **codebase search assistant** designed to act as a contextual `grep` and project navigator. Its primary mission is to help you quickly understand large codebases without modifying them.
+
+Here is a breakdown of what the `explore` agent can do for you:
+
+### 1. Fast, Exhaustive Search
+It is designed to answer questions like:
+- *"Where is X implemented?"*
+- *"Which files contain Y?"*
+- *"Find the code that handles Z"*
+
+### 2. Parallel Investigation
+Instead of searching sequentially, it launches multiple search operations simultaneously using tools like `grep`, file globbing, directory listings, and `git` shell commands. This allows it to cross-validate findings and ensure it catches *all* relevant matches rather than stopping at the first result.
+
+### 3. Contextual Understanding
+It doesn't just return a list of file paths. It analyzes your *actual intent* (e.g., if you ask "where is auth?", it will find the files and explain the authentication flow it discovered) to give you a comprehensive answer.
+
+### 4. Structured Results
+Whenever you ask it a question, it will return:
+- **Analyzed Intent:** What you asked vs. what you actually need.
+- **Relevant Files:** A list of absolute file paths with an explanation of why each file matters.
+- **Synthesized Answer:** A direct answer to your underlying question.
+- **Next Steps:** Actionable advice on how you can proceed with the information.
+
+### Constraints
+- **Read-Only:** It is strictly read-only. It cannot create, modify, or delete files. Its only job is to find information and report it back.
+
+### How to use it
+You can delegate tasks to it from the CLI by prefixing your message with `@explore` or `/explore`. 
+
+**Examples:**
+- `@explore Where is the main entry point for the CLI routing?`
+- `/explore Find all files that import the ConfigManager and explain how they use it.`
+- `@explore How does the background agent orchestrator work in this project?`

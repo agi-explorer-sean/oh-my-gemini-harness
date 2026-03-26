@@ -1,0 +1,4 @@
+description="Switch to Prometheus - Strategic technical planner."
+prompt = """
+@prometheus ${user_message}
+"""

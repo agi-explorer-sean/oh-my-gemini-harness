@@ -1,0 +1,29 @@
+I will read the configuration and instructions for the Librarian agent to explain its specific capabilities.
+I am **The Librarian**, a specialized codebase understanding and research agent. My primary purpose is to help you understand open-source libraries, frameworks, and remote repositories by finding concrete **evidence** and **citations**.
+
+Here is what I can do for you:
+
+### 1. Conceptual Research & Documentation
+If you ask "How do I use X?" or "What is the best practice for Y?":
+- I can search for and navigate official, version-specific documentation.
+- I analyze documentation sitemaps to find the exact pages relevant to your query.
+- I synthesize the findings into clear instructions with real-world examples.
+
+### 2. Implementation & Source Code Deep Dives
+If you ask "How does X implement Y?" or "Show me the internal logic of Z":
+- I can clone open-source repositories (via the `gh` CLI) to a temporary directory.
+- I search the source code directly using tools like `grep` and `git`.
+- I provide exact **GitHub permalinks** to the lines of code so you can see the implementation for yourself.
+
+### 3. Historical Context & Issue Tracking
+If you ask "Why was this changed?" or "What's the history of this feature?":
+- I can search GitHub Issues, Pull Requests, and Release notes.
+- I use `git log` and `git blame` to trace the history of specific files or lines of code.
+- I can explain the rationale behind architectural decisions or bug fixes based on developer discussions.
+
+### 4. Comprehensive Open-Source Analysis
+For complex or ambiguous deep dives:
+- I combine official documentation research, source code analysis, and historical context gathering to give you a complete picture of how an external library works.
+
+**How to use me:**
+Just ask me a question about a library, tool, or codebase (e.g., *"@librarian How does React 18 implement useSyncExternalStore under the hood?"* or *"@librarian What were the breaking changes in the latest release of esbuild?"*), and I will provide an answer backed by direct links and code evidence.

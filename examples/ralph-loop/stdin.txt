@@ -1,0 +1,1 @@
+/ralph-loop create a gemini extension like claude cowork at ~/Documents/cowork-gemini-extension. As you work, narrate each step you take — what files you are creating, what commands you are running, and what decisions you are making.

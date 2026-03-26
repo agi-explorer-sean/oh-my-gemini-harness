@@ -1,0 +1,4 @@
+description = "Start Sisyphus work session from Prometheus plan."
+prompt = """
+/start-work ${user_message}
+"""

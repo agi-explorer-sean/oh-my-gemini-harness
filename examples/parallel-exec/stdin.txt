@@ -1,0 +1,1 @@
+/parallel-exec '[{"description":"Say Ping","prompt":"Say Ping"},{"description":"Say Pong","prompt":"Say Pong"}]'

@@ -1,0 +1,4 @@
+description="Switch to Librarian - Research and documentation expert."
+prompt = """
+@librarian ${user_message}
+"""

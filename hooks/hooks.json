@@ -1,0 +1,60 @@
+{
+  "hooks": {
+    "BeforeAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch BeforeAgent"
+          }
+        ]
+      }
+    ],
+    "AfterAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch AfterAgent",
+            "timeout": 600000
+          }
+        ]
+      }
+    ],
+    "BeforeTool": [
+      {
+        "matcher": "^(?!(read_file|ls|glob|grep|ast_grep_search|session_.*|lsp_.*)$).*$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch BeforeTool"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch SessionStart"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch SessionEnd"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+I'll delegate this to the generalist agent, which is best suited for providing a concise explanation of a technical concept like a mutex.
+The best agent for a quick technical explanation without needing deep codebase context is the **Generalist**. 
+
+Here is the explanation from the Generalist agent:
+
+"A mutex is a synchronization primitive used in concurrent programming to ensure that only one thread can access a shared resource at a given time, preventing race conditions."

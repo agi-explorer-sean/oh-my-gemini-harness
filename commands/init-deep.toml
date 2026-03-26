@@ -1,0 +1,5 @@
+description = "Initialize hierarchical AGENTS.md knowledge base."
+prompt = """
+Initialize the AGENTS.md knowledge base for this project.
+Explore the directory structure, identify key modules, and document the agents responsible for each area.
+"""

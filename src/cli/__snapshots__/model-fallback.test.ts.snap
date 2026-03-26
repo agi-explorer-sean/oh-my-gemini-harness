@@ -1,0 +1,566 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`generateModelConfig no providers available returns ULTIMATE_FALLBACK for all agents and categories when no providers 1`] = `
+{
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "agents": {
+    "atlas": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "explore": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "hephaestus": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "librarian": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "metis": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "momus": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "oracle": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "prometheus": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+  },
+  "categories": {
+    "artistry": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "deep": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "quick": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "ultrabrain": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "unspecified-high": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "unspecified-low": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "visual-engineering": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+    "writing": {
+      "model": "google/gemini-2.5-flash-lite",
+    },
+  },
+}
+`;
+
+exports[`generateModelConfig single native provider uses Gemini models when only Gemini is available 1`] = `
+{
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "agents": {
+    "atlas": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "explore": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "hephaestus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "librarian": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "metis": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "momus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "oracle": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "prometheus": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "sisyphus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+  },
+  "categories": {
+    "artistry": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "deep": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "quick": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "ultrabrain": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "unspecified-high": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "unspecified-low": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "visual-engineering": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "writing": {
+      "model": "google/gemini-3-flash-preview",
+    },
+  },
+}
+`;
+
+exports[`generateModelConfig single native provider uses Gemini models with isMax20 flag 1`] = `
+{
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "agents": {
+    "atlas": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "explore": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "hephaestus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "librarian": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "metis": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "momus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "oracle": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "prometheus": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "sisyphus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+  },
+  "categories": {
+    "artistry": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "deep": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "quick": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "ultrabrain": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "unspecified-high": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "unspecified-low": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "visual-engineering": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "writing": {
+      "model": "google/gemini-3-flash-preview",
+    },
+  },
+}
+`;
+
+exports[`generateModelConfig fallback providers uses Gemini Zen models when only Gemini Zen is available 1`] = `
+{
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "agents": {
+    "atlas": {
+      "model": "gemini/gemini-3-pro-preview",
+    },
+    "explore": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "hephaestus": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "librarian": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "metis": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "momus": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "multimodal-looker": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "oracle": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "prometheus": {
+      "model": "gemini/gemini-3-pro-preview",
+    },
+    "sisyphus": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+  },
+  "categories": {
+    "artistry": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "deep": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "quick": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "ultrabrain": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "unspecified-high": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "unspecified-low": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "visual-engineering": {
+      "model": "gemini/gemini-3-pro-preview",
+    },
+    "writing": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+  },
+}
+`;
+
+exports[`generateModelConfig fallback providers uses Gemini Zen models with isMax20 flag 1`] = `
+{
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "agents": {
+    "atlas": {
+      "model": "gemini/gemini-3-pro-preview",
+    },
+    "explore": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "hephaestus": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "librarian": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "metis": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "momus": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "multimodal-looker": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "oracle": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "prometheus": {
+      "model": "gemini/gemini-3-pro-preview",
+    },
+    "sisyphus": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+  },
+  "categories": {
+    "artistry": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "deep": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "quick": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "ultrabrain": {
+      "model": "gemini/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "unspecified-high": {
+      "model": "gemini/gemini-3-pro-preview",
+    },
+    "unspecified-low": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+    "visual-engineering": {
+      "model": "gemini/gemini-3-pro-preview",
+    },
+    "writing": {
+      "model": "gemini/gemini-3-flash-preview",
+    },
+  },
+}
+`;
+
+exports[`generateModelConfig mixed provider scenarios uses Gemini + Gemini Zen combination 1`] = `
+{
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "agents": {
+    "atlas": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "explore": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "hephaestus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "librarian": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "metis": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "momus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "oracle": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "prometheus": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "sisyphus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+  },
+  "categories": {
+    "artistry": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "deep": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "quick": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "ultrabrain": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "unspecified-high": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "unspecified-low": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "visual-engineering": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "writing": {
+      "model": "google/gemini-3-flash-preview",
+    },
+  },
+}
+`;
+
+exports[`generateModelConfig mixed provider scenarios uses all providers together 1`] = `
+{
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "agents": {
+    "atlas": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "explore": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "hephaestus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "librarian": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "metis": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "momus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "oracle": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "prometheus": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "sisyphus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+  },
+  "categories": {
+    "artistry": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "deep": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "quick": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "ultrabrain": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "unspecified-high": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "unspecified-low": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "visual-engineering": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "writing": {
+      "model": "google/gemini-3-flash-preview",
+    },
+  },
+}
+`;
+
+exports[`generateModelConfig mixed provider scenarios uses all providers with isMax20 flag 1`] = `
+{
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "agents": {
+    "atlas": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "explore": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "hephaestus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "librarian": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "metis": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "momus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "oracle": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "prometheus": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "sisyphus": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+  },
+  "categories": {
+    "artistry": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "deep": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "quick": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "ultrabrain": {
+      "model": "google/gemini-3-pro-preview",
+      "variant": "max",
+    },
+    "unspecified-high": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "unspecified-low": {
+      "model": "google/gemini-3-flash-preview",
+    },
+    "visual-engineering": {
+      "model": "google/gemini-3-pro-preview",
+    },
+    "writing": {
+      "model": "google/gemini-3-flash-preview",
+    },
+  },
+}
+`;

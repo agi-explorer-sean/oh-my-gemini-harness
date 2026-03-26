@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "lib": ["ESNext"],
+    "types": ["bun-types"],
+    "paths": {
+      "@gemini-ai/sdk": ["./src/shared/sdk-adapter.ts"],
+      "@gemini-ai/sdk/tool": ["./src/shared/sdk-adapter.ts"],
+      "@config/schema": ["./third_party/oh-my-opencode/src/config/schema.ts"],
+      "@src/*": ["./src/*", "./third_party/oh-my-opencode/src/*"],
+      "@agents/*": ["./src/agents/*", "./third_party/oh-my-opencode/src/agents/*"],
+      "@shared/*": ["./src/shared/*", "./third_party/oh-my-opencode/src/shared/*"],
+      "@tools/*": ["./src/tools/*", "./third_party/oh-my-opencode/src/tools/*"],
+      "@features/*": ["./src/features/*", "./third_party/oh-my-opencode/src/features/*"],
+      "@hooks/*": ["./src/hooks/*", "./third_party/oh-my-opencode/src/hooks/*"],
+      "@cli/*": ["./src/cli/*", "./third_party/oh-my-opencode/src/cli/*"],
+      "@mcp/*": ["./src/mcp/*", "./third_party/oh-my-opencode/src/mcp/*"]
+    }
+  },
+  "include": ["src/**/*", "third_party/oh-my-opencode/src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "script"]
+}

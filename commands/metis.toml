@@ -1,0 +1,4 @@
+description = "Switch to Metis - Pre-planning consultant (intent analysis)."
+prompt = """
+@metis ${user_message}
+"""

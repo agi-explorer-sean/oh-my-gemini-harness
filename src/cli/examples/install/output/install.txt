@@ -1,0 +1,51 @@
+
+ oMgMgMgMgMg... Install 
+
+[1/9] Checking Gemini installation...
+[OK] Gemini 0.30.0-nightly.20260210.a2174751d-git.58d637f detected
+[2/9] Checking system dependencies...
+[OK] gh found
+[OK] tmux found
+[3/9] Installing dependencies...
+[OK] Dependencies installed
+[4/9] Building extension...
+[OK] Extension already built
+[5/9] Adding oh-my-gemini plugin...
+[OK] Plugin added -> /usr/local/google/home/xiaolongyang/.config/gemini/gemini.json
+[6/9] Adding auth plugins...
+[OK] Auth plugins configured -> /usr/local/google/home/xiaolongyang/.config/gemini/gemini.json
+[7/9] Adding provider configurations...
+[OK] Providers configured -> /usr/local/google/home/xiaolongyang/.config/gemini/gemini.json
+[8/9] Writing oh-my-gemini configuration...
+[OK] Config written -> /usr/local/google/home/xiaolongyang/.config/gemini/oh-my-gemini.json
+[9/9] Linking extension with Gemini CLI...
+[!] Extension link failed: Gemini binary not found. Cannot link extension.
+[i] Try running manually: gemini extensions link .
+
+┌─ Installation Complete ──────────────────────┐
+│ Configuration Summary                         │
+│                                               │
+│   [OK] Gemini                                 │
+│                                               │
+│ ────────────────────────────────────────      │
+│                                               │
+│ Model Assignment                              │
+│                                               │
+│   [i] Models auto-configured for Gemini CLI   │
+└───────────────────────────────────────────────┘
+
+* Installation complete!
+  Run gemini to start!
+
+
+┌─ The Magic Word ─────────────────────────────────────────────────┐
+│ Pro Tip: Include ultrawork (or ulw) in your prompt.               │
+│ All features work like magic—parallel agents, background tasks,   │
+│ deep exploration, and relentless execution until completion.      │
+└───────────────────────────────────────────────────────────────────┘
+
+* If you found this helpful, consider starring the repo!
+  gh api --silent --method PUT /user/starred/agi-explorer-sean/omg-harness >/dev/null 2>&1 || true
+
+oMgMgMgMgMg... Enjoy!
+

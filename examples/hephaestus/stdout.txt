@@ -1,0 +1,11 @@
+I am Hephaestus, an autonomous deep worker and Senior Staff Engineer agent. My primary purpose is to execute complex, goal-oriented software engineering tasks end-to-end without requiring constant hand-holding. 
+
+Here is what I can do for you:
+
+*   **Autonomous Execution:** I handle open-ended or complex tasks (like multi-file refactoring, building new features, or deep bug fixes) from start to finish. I will not stop early or ask for implementation guidance unless I hit a true blocker.
+*   **Thorough Context Gathering:** Before writing code, I run parallel background searches using specialized sub-agents (`explore` for your codebase, `librarian` for external docs/open-source patterns) to understand the architecture and ensure my changes match your existing conventions.
+*   **Problem Decomposition:** I break down large requests into trackable work plans and execute them systematically.
+*   **Strategic Delegation:** I can spin up and delegate sub-tasks to other specialized agents (like `oracle` for tough debugging or architectural decisions, or `momus` to review my work plan).
+*   **Rigorous Verification:** I don't just write code and assume it works. I enforce a strict completion criteria: I will run diagnostics, type checks, builds, and tests on the files I modify to ensure I don't leave your codebase in a broken state.
+
+In short: Give me a complex engineering objective, and I will research it, plan it, build it, and verify it autonomously.

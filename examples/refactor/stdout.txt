@@ -1,0 +1,8 @@
+I am equipped to handle comprehensive codebase refactoring through a structured, autonomous, and verifiable process. Here is an overview of what I can do:
+
+1. **Analysis of Current Structure**: I use fast search tools (`grep_search`, `glob`) and codebase investigation to systematically map your existing architecture, resolve dependencies, and understand the surrounding context of the code you want to change.
+2. **Identification of Patterns to Improve**: I analyze the retrieved code to identify redundant logic, structural anti-patterns, and deviations from your established workspace conventions or architectural patterns. 
+3. **Safe Application of Changes**: I execute targeted, surgical modifications. I can utilize shell-based AST tools (like `ast-grep` or `jscodeshift`) if they are available in your project, alongside my native file manipulation tools, to ensure syntactically safe and idiomatic transformations.
+4. **Verification via Build and Tests**: I do not consider a refactoring complete until it is empirically validated. I will autonomously run your project's checks (e.g., `bun run typecheck`, `bun run build`, and `bun test`) to rigorously verify behavioral correctness and ensure no regressions were introduced.
+
+Please provide the specific file, directory, or logic you would like to refactor, and I will begin the analysis phase.

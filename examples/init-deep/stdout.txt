@@ -1,0 +1,81 @@
+I have explored the directory structure and read the existing knowledge base files within the subdirectories. Since I do not have direct file-writing permissions in this restricted environment, here is the initialized `AGENTS.md` for the root project (`omg-harness`) that you can save to the workspace.
+
+```markdown
+# AGENTS KNOWLEDGE BASE (omg-harness)
+
+## OVERVIEW
+
+This project (`omg-harness`) is a multi-model agent orchestration plugin for Gemini. It wraps the core engine (`third_party/oh-my-opencode`) with Google-owned bridging logic, CLI commands, features, and hooks. 
+
+This document outlines the directory structure, key modules, and the recommended AI Agents responsible for developing and maintaining each area.
+
+## KEY MODULES & DIRECTORY STRUCTURE
+
+| Module / Directory | Description | Recommended Agent(s) |
+|--------------------|-------------|----------------------|
+| **`src/`** | Google-owned entry points and bridging logic. | **Sisyphus**, **Oracle** |
+| `src/agents/` | Agent definitions, factories, metadata, and tool restrictions. | **Sisyphus**, **Prometheus** |
+| `src/cli/` | CLI entry points (`install`, `run`), Commander.js setup, and TUI (`@clack-prompts`). | **Hephaestus**, **Sisyphus** |
+| `src/features/` | Core logic including background agents, skill MCPs, and Claude Code loaders. | **Hephaestus**, **Metis** |
+| `src/hooks/` | 34 lifecycle hooks intercepting agent behavior across 5 events. | **Oracle**, **Momus** |
+| `src/mcp/` | Model Context Protocol servers (websearch, context7, grep_app). | **Librarian**, **Sisyphus** |
+| `src/shared/` | 66 cross-cutting utilities (token truncation, config parsing, paths). | **Metis**, **Sisyphus** |
+| `src/config/` | Zod schema validation for multi-level configuration. | **Momus**, **Sisyphus** |
+| **`third_party/oh-my-opencode/`** | Core engine. **IMMUTABLE VENDOR SOURCE**. Do not modify. | **Explore**, **Librarian** |
+| **`commands/`** | Google-owned command templates (`.toml`). | **Sisyphus** |
+| **`examples/`** | Examples and test cases for agents. | **Sisyphus-Junior** |
+
+## AGENT ROLES & RESPONSIBILITIES
+
+### Sisyphus (Primary Orchestrator & Engineer)
+- **Role:** The default agent for software engineering tasks (coding, debugging, refactoring, file operations).
+- **Areas:** Most active in `src/`, `commands/`, and general workflow orchestration.
+- **Tools:** Full write/execute access. Relies on fallback chains if the primary model fails.
+
+### Oracle (Technical Advisor & Architect)
+- **Role:** High-IQ consultant for complex problems, debugging, and system design.
+- **Areas:** `src/hooks/` (interception logic) and architecture in `src/features/`.
+- **Tools:** Read-only and analysis (denied write/edit/delegate tools).
+
+### Hephaestus (Autonomous Deep Worker)
+- **Role:** The "Legitimate Craftsman" for deep, focused implementation.
+- **Areas:** Complex standalone feature implementation in `src/features/` and `src/cli/`.
+- **Tools:** Full implementation tools; works best autonomously on well-defined plans.
+
+### Librarian (Research & OSS Expert)
+- **Role:** Multi-repo research, documentation, and external library understanding.
+- **Areas:** `src/mcp/` integrations, `third_party/` exploration, updating `AGENTS.md` files.
+- **Tools:** Read-only and documentation-focused.
+
+### Explore (Contextual Grep & Search)
+- **Role:** Fast codebase search and pattern matching.
+- **Areas:** Scanning the **immutable** `third_party/oh-my-opencode/` to understand vendor code safely.
+- **Tools:** Read-only; optimized for fast ripgrep/AST-grep execution.
+
+### Prometheus (Strategic Planning & Design)
+- **Role:** High-level project planning and design (does not write code).
+- **Areas:** Designing new features in `src/features/` or new hooks in `src/hooks/`.
+
+### Metis (Performance & Optimization)
+- **Role:** Gap detection and pre-planning analysis.
+- **Areas:** `src/shared/` utilities, background task performance in `src/features/background-agent/`.
+
+### Momus (Critical Reviewer)
+- **Role:** Ruthless fault-finding and plan validation.
+- **Areas:** Validating `src/config/` schemas and hook interception points.
+
+### Atlas (Master Orchestrator)
+- **Role:** Team lead managing sub-agents and holding the main TODO list.
+- **Areas:** Oversees parallel execution and high-level workflow delegation.
+
+### Multimodal-Looker
+- **Role:** Media, PDF, and image analysis.
+- **Areas:** UI/UX reference analysis (if needed).
+
+## AGENT ROUTING & DELEGATION
+
+1. **Software Engineering:** Delegate tasks to `Sisyphus` using `call_subagent` or `delegate_task`.
+2. **Analysis/Research:** Launch `Explore` or `Librarian` in parallel for read-only codebase mapping before diving deep.
+3. **Complex Logic:** Consult `Oracle` for architectural advice before implementing in `src/hooks/`.
+4. **Implementation:** Hand off a solid plan to `Hephaestus` for deep, unassisted execution.
+```

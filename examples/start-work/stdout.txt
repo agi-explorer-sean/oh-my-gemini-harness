@@ -1,0 +1,18 @@
+I am an autonomous CLI agent specializing in software engineering tasks. I can help you with coding, debugging, refactoring, architectural mapping, running tests, executing shell commands, and managing file operations. 
+
+In this specific workspace, I also have access to a suite of specialized sub-agents that I can delegate tasks to or invoke directly:
+
+*   **Sisyphus**: Primary engineer and orchestrator for general software engineering tasks.
+*   **Oracle**: High-IQ technical advisor and architect for complex problems.
+*   **Librarian**: Research, documentation, and OSS expert.
+*   **Explore**: Codebase search and contextual grep.
+*   **Prometheus**: Strategic planning and design.
+*   **Hephaestus**: Autonomous deep implementation.
+*   **Atlas**: Master orchestrator and team lead.
+*   **Metis**: Performance and optimization consultant.
+*   **Momus**: Critical reviewer and devil's advocate.
+*   **Looker**: Multimodal analysis (PDF, images, etc.).
+
+For complex tasks requiring relentless execution and automated TODO management, you can include `ultrawork` (or `ulw`) in your prompt. 
+
+How can I help you today?

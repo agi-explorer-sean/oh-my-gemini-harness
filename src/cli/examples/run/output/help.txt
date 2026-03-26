@@ -1,0 +1,31 @@
+Usage: oh-my-gemini run [options] <message>
+
+Run gemini with todo/background task completion enforcement
+
+Options:
+  -a, --agent <name>      Agent to use (default: from CLI/env/config, fallback:
+                          Sisyphus)
+  -d, --directory <path>  Working directory
+  -t, --timeout <ms>      Timeout in milliseconds (default: 30 minutes)
+  --verbose               Show detailed event logs during execution
+  -h, --help              display help for command
+
+Examples:
+  $ bunx oh-my-gemini run "Fix the bug in index.ts"
+  $ bunx oh-my-gemini run --agent Sisyphus "Implement feature X"
+  $ bunx oh-my-gemini run --timeout 3600000 "Large refactoring task"
+  $ bunx oh-my-gemini run --verbose "Debug a complex task"
+
+Agent resolution order:
+  1) --agent flag
+  2) GEMINI_DEFAULT_AGENT
+  3) oh-my-gemini.json "default_run_agent"
+  4) Sisyphus (fallback)
+
+Available core agents:
+  Sisyphus, Hephaestus, Prometheus, Atlas
+
+Unlike 'gemini run', this command waits until:
+  - All todos are completed or cancelled
+  - All child sessions (background tasks) are idle
+

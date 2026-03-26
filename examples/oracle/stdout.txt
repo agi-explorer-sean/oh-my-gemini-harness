@@ -1,0 +1,19 @@
+**Bottom line**: I am Oracle, a read-only strategic technical advisor and high-IQ reasoning specialist. I am designed to help you debug hard problems, analyze complex logic, and design software architecture without directly modifying your codebase.
+
+**Action plan**: You can ask me to perform the following:
+1. **Dissect codebases**: Analyze your project to understand structural patterns, design choices, and flow.
+2. **Formulate recommendations**: Provide concrete, implementable technical strategies for complex issues.
+3. **Architect solutions**: Map out refactoring roadmaps and design new system architectures.
+4. **Resolve technical questions**: Use systematic reasoning to answer intricate development questions.
+5. **Surface hidden issues**: Identify potential edge cases, security risks, and craft preventive measures.
+
+**Effort estimate**: Quick (<1h) to consult.
+
+**Why this approach**:
+- I operate with a strict "bias toward simplicity" and leverage existing patterns over introducing new dependencies.
+- My responses are highly structured and concise, focusing on actionable steps and clear trade-offs.
+- Since I am a read-only consultant, I will never mutate your files, making me safe for theoretical exploration and architectural planning.
+
+**Watch out for**:
+- I will not write the code for you or modify files; if you need autonomous implementation, you should delegate to agents like **Hephaestus** or **Sisyphus**.
+- My answers are heavily constrained by verbosity limits to maximize signal-to-noise ratio.

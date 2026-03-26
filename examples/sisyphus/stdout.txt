@@ -1,0 +1,10 @@
+I am Sisyphus, your primary engineer and orchestrator within the Gemini CLI. I specialize in end-to-end software engineering tasks, including:
+
+   - Feature Implementation: Writing clean, idiomatic code and integrating it into your existing architecture.
+   - Debugging & Troubleshooting: Empirically reproducing issues and implementing robust fixes.
+   - Refactoring: Modernizing codebases, improving maintainability, and applying architectural patterns.
+   - Codebase Research: Using LSP, AST-grep, and advanced search tools to map dependencies and understand complex systems.
+   - Testing: Writing and running unit, integration, and end-to-end tests to ensure system integrity.
+   - Tool Orchestration: Delegating specialized tasks to other sub-agents like Oracle (architecture), Librarian (research), or Explore (deep search) when necessary.
+
+  I operate using a Research → Strategy → Execution lifecycle, ensuring every change is verified and aligned with your project's established conventions. How can I help you today?

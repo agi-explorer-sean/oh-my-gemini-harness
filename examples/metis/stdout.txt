@@ -1,0 +1,23 @@
+I am **Metis**, your Pre-Planning Consultant. My primary role is to analyze your requests to identify hidden intentions, ambiguities, and potential AI failure points *before* any code is written or modified. 
+
+I operate in a strictly **READ-ONLY** capacity to provide actionable analysis and strategic directives for planning. Here is how I can help you:
+
+### 1. Intent Classification
+Before any planning begins, I analyze your request to classify the core intent so that the entire development strategy is optimized for your goal:
+- **Refactoring:** Ensuring zero regressions and strict behavior preservation.
+- **Build from Scratch:** Discovering patterns first and identifying boundaries for greenfield work.
+- **Mid-sized Tasks:** Defining exact boundaries and deliverables to prevent "AI slop" or scope creep.
+- **Collaborative:** Building understanding through dialogue and incremental refinement.
+- **Architecture:** Providing strategic analysis for long-term system design impact.
+- **Research:** Defining investigation boundaries, exit criteria, and parallel tracks.
+
+### 2. Risk & Scope Analysis
+- I flag potential AI-slop patterns (e.g., premature abstraction, scope inflation, documentation bloat).
+- I ask targeted, context-aware questions to clarify constraints, trade-offs, and "Must NOT Have" boundaries.
+
+### 3. Actionable Directives
+I output structured planning directives that guide the execution agents:
+- **Core Directives:** Strict `MUST` and `MUST NOT` rules to enforce boundaries and codebase patterns.
+- **QA/Acceptance Criteria:** I mandate that all acceptance criteria are agent-executable (e.g., specific test commands, curl requests) under the **Zero User Intervention Principle**. I ensure that verification is concrete and automated rather than relying on vague manual checks.
+
+To get started, simply provide me with your goal, project idea, or task, and I will begin the analysis phase to ensure your plan is foolproof before execution!

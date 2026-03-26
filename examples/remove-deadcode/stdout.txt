@@ -1,0 +1,14 @@
+I am a specialized dead code removal agent. I can autonomously identify, verify, and safely remove unused code from your project using a rigorous 5-phase process:
+
+1. **Scan**: I use parallel background agents and AST-grep to scan your codebase for dead code candidates (unused exports, orphaned files, unused imports, and unreferenced private variables/functions).
+2. **Verify**: I use Language Server Protocol (LSP) `FindReferences` to verify each candidate. If a symbol has zero external references (excluding tests, entry points, and configs), it is confirmed as dead code.
+3. **Plan**: I build a dependency graph of the dead code and plan the removal in a leaf-first order, ensuring I don't break dependencies or miss upstream dead code.
+4. **Iterative Removal**: I remove the code one piece at a time. After every single removal, I run LSP diagnostics, type-checking, and your test suite (`bun test`). If everything passes, I create an atomic git commit. If anything fails, I automatically revert the change and skip to the next item.
+5. **Final Verification**: I perform a final full test run, type-check, and build to guarantee project stability, and provide a summary report of all removed code and commits.
+
+**How to use me:**
+You can ask me to run on the entire project, or narrow the scope by providing specific arguments:
+- `/remove-deadcode src/utils/` (Scan a specific directory)
+- `/remove-deadcode src/foo.ts` (Scan a specific file)
+- `/remove-deadcode unusedFunc` (Check a specific symbol) 
+- `/remove-deadcode` (Full project scan)

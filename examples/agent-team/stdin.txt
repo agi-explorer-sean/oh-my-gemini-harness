@@ -1,0 +1,1 @@
+/team create architects && @atlas Delegate one agent to say "Hello" and another to say "World".
