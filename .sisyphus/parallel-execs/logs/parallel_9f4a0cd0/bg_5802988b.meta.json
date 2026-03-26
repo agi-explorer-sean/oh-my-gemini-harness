@@ -1,0 +1,9 @@
+{
+  "task_id": "bg_5802988b",
+  "agent": "sisyphus-junior",
+  "description": "Say Ping",
+  "exit_code": 42,
+  "prompt_length": 137,
+  "started_at": 1774499342196,
+  "completed_at": 1774499353164
+}

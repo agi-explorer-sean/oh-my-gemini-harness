@@ -1,0 +1,47 @@
+{
+  "id": "parallel_9f4a0cd0",
+  "parentSessionID": "mcp-fqxxw4gm",
+  "parentMessageID": "mcp-message",
+  "directory": "/home/sean/Documents/omg-harness",
+  "config": {
+    "maxParallel": 10,
+    "waveDelayMs": 2000,
+    "pollIntervalMs": 2000,
+    "stopOnFirstFailure": false,
+    "isolation": true,
+    "synthesis": true,
+    "skipPool": false,
+    "mode": "read_write"
+  },
+  "tasks": [
+    {
+      "id": "7e016703-6234-4e50-8b3f-e2b669f5dd87",
+      "status": "completed",
+      "description": "Say Ping",
+      "prompt": "Say Ping",
+      "agent": "sisyphus-junior",
+      "skills": [],
+      "logDir": "/home/sean/Documents/omg-harness/.sisyphus/parallel-execs/logs/parallel_9f4a0cd0",
+      "workingDirectory": "/tmp/oh-my-gemini/parallels/be3ab586-83dd-47e6-bd46-f7dc86708555/worktree",
+      "startTime": 1774499342193,
+      "taskId": "bg_5802988b",
+      "output": "MCP issues detected. Run /mcp list for status.Created execution plan for SessionEnd: 1 hook(s) to execute in parallel\nExpanding hook command: bun dist/cli/index.js dispatch SessionEnd (cwd: /tmp/oh-my-gemini/parallels/be3ab586-83dd-47e6-bd46-f7dc86708555/worktree)\nHook execution for SessionEnd: 1 hooks executed successfully, total duration: 1806ms\nCreated execution plan for SessionEnd: 1 hook(s) to execute in parallel\nExpanding hook command: bun dist/cli/index.js dispatch SessionEnd (cwd: /tmp/oh-my-gemini/parallels/be3ab586-83dd-47e6-bd46-f7dc86708555/worktree)\nHook execution for SessionEnd: 1 hooks executed successfully, total duration: 1788ms",
+      "endTime": 1774499354030
+    },
+    {
+      "id": "b629b4f1-7fc5-4692-8d1b-abcf58c96178",
+      "status": "completed",
+      "description": "Say Pong",
+      "prompt": "Say Pong",
+      "agent": "sisyphus-junior",
+      "skills": [],
+      "logDir": "/home/sean/Documents/omg-harness/.sisyphus/parallel-execs/logs/parallel_9f4a0cd0",
+      "workingDirectory": "/tmp/oh-my-gemini/parallels/ad940b81-331e-441a-aa5d-c503242c56d1/worktree",
+      "startTime": 1774499344355,
+      "taskId": "bg_451183d2",
+      "output": "MCP issues detected. Run /mcp list for status.Created execution plan for SessionEnd: 1 hook(s) to execute in parallel\nExpanding hook command: bun dist/cli/index.js dispatch SessionEnd (cwd: /tmp/oh-my-gemini/parallels/ad940b81-331e-441a-aa5d-c503242c56d1/worktree)\nHook execution for SessionEnd: 1 hooks executed successfully, total duration: 1800ms\nCreated execution plan for SessionEnd: 1 hook(s) to execute in parallel\nExpanding hook command: bun dist/cli/index.js dispatch SessionEnd (cwd: /tmp/oh-my-gemini/parallels/ad940b81-331e-441a-aa5d-c503242c56d1/worktree)\nHook execution for SessionEnd: 1 hooks executed successfully, total duration: 1751ms",
+      "endTime": 1774499356032
+    }
+  ],
+  "activeTaskIds": []
+}

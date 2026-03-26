@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch BeforeAgent"
+            "command": "bun /home/sean/Documents/oh-my-gemini-harness/dist/cli/index.js dispatch BeforeAgent"
           }
         ]
       }
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch AfterAgent",
+            "command": "bun /home/sean/Documents/oh-my-gemini-harness/dist/cli/index.js dispatch AfterAgent",
             "timeout": 600000
           }
         ]
@@ -29,7 +29,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch BeforeTool"
+            "command": "bun /home/sean/Documents/oh-my-gemini-harness/dist/cli/index.js dispatch BeforeTool"
           }
         ]
       }
@@ -40,7 +40,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch SessionStart"
+            "command": "bun /home/sean/Documents/oh-my-gemini-harness/dist/cli/index.js dispatch SessionStart"
           }
         ]
       }
@@ -51,7 +51,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bun /home/sean/Documents/omg-harness/dist/cli/index.js dispatch SessionEnd"
+            "command": "bun /home/sean/Documents/oh-my-gemini-harness/dist/cli/index.js dispatch SessionEnd"
           }
         ]
       }

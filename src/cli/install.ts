@@ -564,7 +564,7 @@ async function runNonTuiInstall(args: InstallArgs): Promise<number> {
     `${SYMBOLS.star} ${color.yellow('If you found this helpful, consider starring the repo!')}`,
   );
   console.log(
-    `  ${color.dim('gh api --silent --method PUT /user/starred/agi-explorer-sean/omg-harness >/dev/null 2>&1 || true')}`,
+    `  ${color.dim('gh api --silent --method PUT /user/starred/agi-explorer-sean/oh-my-gemini-harness >/dev/null 2>&1 || true')}`,
   );
   console.log();
   console.log(color.dim('oMgMgMgMgMg... Enjoy!'));
@@ -818,7 +818,7 @@ export async function install(args: InstallArgs): Promise<number> {
     `${color.yellow('★')} If you found this helpful, consider starring the repo!`,
   );
   p.log.message(
-    `  ${color.dim('gh api --silent --method PUT /user/starred/agi-explorer-sean/omg-harness >/dev/null 2>&1 || true')}`,
+    `  ${color.dim('gh api --silent --method PUT /user/starred/agi-explorer-sean/oh-my-gemini-harness >/dev/null 2>&1 || true')}`,
   );
 
   p.outro(color.green('oMgMgMgMgMg... Enjoy!'));

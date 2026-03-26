@@ -1,0 +1,9 @@
+{
+  "task_id": "bg_8e676063",
+  "agent": "sisyphus-junior",
+  "description": "Agent saying World",
+  "exit_code": 42,
+  "prompt_length": 148,
+  "started_at": 1774162732197,
+  "completed_at": 1774162743805
+}

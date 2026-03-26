@@ -1,7 +1,7 @@
 I will launch the parallel execution for the tasks "Say Ping" and "Say Pong".
 
 ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ ✓  parallel_exec (omg-harness MCP Server) {"synthesis":true,"tasks":"[{\"description\":\"Say Ping\",\"prompt\":\"Say Ping\"},{\"description\":\"Say Pong\",\"prompt\":\"Say Pong\"}]"… │
+│ ✓  parallel_exec (oh-my-gemini-harness MCP Server) {"synthesis":true,"tasks":"[{\"description\":\"Say Ping\",\"prompt\":\"Say Ping\"},{\"description\":\"Say Pong\",\"prompt\":\"Say Pong\"}]"… │
 │                                                                                                                                                                                        │
 │ Parallel execution started in background.                                                                                                                                              │
 │ Task ID: parallel_9f4a0cd0                                                                                                                                                             │

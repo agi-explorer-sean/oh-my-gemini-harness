@@ -1,0 +1,9 @@
+{
+  "task_id": "bg_11d30845",
+  "agent": "sisyphus-junior",
+  "description": "Agent 1",
+  "exit_code": 42,
+  "prompt_length": 140,
+  "started_at": 1774162293518,
+  "completed_at": 1774162304893
+}

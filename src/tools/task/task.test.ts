@@ -174,7 +174,7 @@ describe("task_tool", () => {
       const args = {
         action: "create" as const,
         subject: "Test task",
-        repoURL: "https://github.com/agi-explorer-sean/omg-harness",
+        repoURL: "https://github.com/agi-explorer-sean/oh-my-gemini-harness",
       }
 
       //#when
@@ -182,7 +182,7 @@ describe("task_tool", () => {
       const result = JSON.parse(resultStr)
 
       //#then
-      expect(result.task.repoURL).toBe("https://github.com/agi-explorer-sean/omg-harness")
+      expect(result.task.repoURL).toBe("https://github.com/agi-explorer-sean/oh-my-gemini-harness")
     })
 
     test("returns result as JSON string with task property", async () => {

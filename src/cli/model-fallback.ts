@@ -31,7 +31,7 @@ export interface GeneratedOmgConfig {
 }
 
 const ULTIMATE_FALLBACK = "google/gemini-2.5-flash-lite"
-const SCHEMA_URL = "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json"
+const SCHEMA_URL = "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json"
 
 function toProviderAvailability(config: InstallConfig): ProviderAvailability {
   return {

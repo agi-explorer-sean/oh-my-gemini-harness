@@ -45,7 +45,7 @@
 └───────────────────────────────────────────────────────────────────┘
 
 * If you found this helpful, consider starring the repo!
-  gh api --silent --method PUT /user/starred/agi-explorer-sean/omg-harness >/dev/null 2>&1 || true
+  gh api --silent --method PUT /user/starred/agi-explorer-sean/oh-my-gemini-harness >/dev/null 2>&1 || true
 
 oMgMgMgMgMg... Enjoy!
 

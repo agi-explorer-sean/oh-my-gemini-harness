@@ -8,7 +8,7 @@ import {log} from '../shared/logger';
 
 async function createServer() {
   const server = new McpServer({
-    name: 'omg-harness',
+    name: 'oh-my-gemini-harness',
     version: '0.1.0',
   });
 
@@ -99,7 +99,7 @@ export async function startMcpServer() {
       '[mcp-server] Sub-agent detected (OMG_PARENT_AGENT), starting minimal server',
     );
     const server = new McpServer({
-      name: 'omg-harness',
+      name: 'oh-my-gemini-harness',
       version: '0.1.0',
     });
     const transport = new StdioServerTransport();

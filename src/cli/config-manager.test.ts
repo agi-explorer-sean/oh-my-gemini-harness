@@ -64,7 +64,7 @@ describe("config-manager", () => {
       const result = generateOmgConfig(config)
 
       // #then Sisyphus uses Gemini
-      expect(result.$schema).toBe("https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json")
+      expect(result.$schema).toBe("https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json")
       expect(result.agents).toBeDefined()
       expect((result.agents as Record<string, { model: string }>).sisyphus.model).toBe("google/gemini-3-pro-preview")
     })

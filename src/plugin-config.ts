@@ -96,7 +96,7 @@ export function getPluginConfig(
 ): OhMyGeminiConfig {
   // User-level config path - prefer .jsonc over .json
   const configDir = getGeminiConfigDir({ binary: "gemini" });
-  const userBasePath = path.join(configDir, "omg-harness");
+  const userBasePath = path.join(configDir, "oh-my-gemini-harness");
   const userDetected = detectConfigFile(userBasePath);
   const userConfigPath =
     userDetected.format !== "none"
@@ -104,7 +104,7 @@ export function getPluginConfig(
       : userBasePath + ".json";
 
   // Project-level config path - prefer .jsonc over .json
-  const projectBasePath = path.join(directory, ".gemini", "omg-harness");
+  const projectBasePath = path.join(directory, ".gemini", "oh-my-gemini-harness");
   const projectDetected = detectConfigFile(projectBasePath);
   const projectConfigPath =
     projectDetected.format !== "none"

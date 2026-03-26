@@ -1,0 +1,45 @@
+{
+  "id": "parallel_68f5150b",
+  "parentSessionID": "mcp-fogwym8s",
+  "parentMessageID": "mcp-message",
+  "directory": "/home/sean/Documents/omg-harness",
+  "config": {
+    "maxParallel": 10,
+    "waveDelayMs": 2000,
+    "pollIntervalMs": 2000,
+    "stopOnFirstFailure": false,
+    "isolation": false,
+    "synthesis": false,
+    "skipPool": false,
+    "mode": "read_write"
+  },
+  "tasks": [
+    {
+      "id": "0d340d03-6805-4d52-93b8-0aaa778cf0f0",
+      "status": "completed",
+      "description": "Agent 1",
+      "prompt": "Say 'Hello'",
+      "agent": "sisyphus-junior",
+      "skills": [],
+      "logDir": "/home/sean/Documents/omg-harness/.sisyphus/parallel-execs/logs/parallel_68f5150b",
+      "startTime": 1774162293515,
+      "taskId": "bg_11d30845",
+      "output": "MCP issues detected. Run /mcp list for status.Created execution plan for SessionEnd: 1 hook(s) to execute in parallel\nExpanding hook command: bun dist/cli/index.js dispatch SessionEnd (cwd: /home/sean/Documents/omg-harness)\nHook execution for SessionEnd: 1 hooks executed successfully, total duration: 1893ms\nCreated execution plan for SessionEnd: 1 hook(s) to execute in parallel\nExpanding hook command: bun dist/cli/index.js dispatch SessionEnd (cwd: /home/sean/Documents/omg-harness)\nHook execution for SessionEnd: 1 hooks executed successfully, total duration: 1936ms",
+      "endTime": 1774162305524
+    },
+    {
+      "id": "c2436e15-d081-4d9e-99a0-6a33d68f63c4",
+      "status": "completed",
+      "description": "Agent 2",
+      "prompt": "Say 'World'",
+      "agent": "sisyphus-junior",
+      "skills": [],
+      "logDir": "/home/sean/Documents/omg-harness/.sisyphus/parallel-execs/logs/parallel_68f5150b",
+      "startTime": 1774162295519,
+      "taskId": "bg_7c9e83f5",
+      "output": "MCP issues detected. Run /mcp list for status.Created execution plan for SessionEnd: 1 hook(s) to execute in parallel\nExpanding hook command: bun dist/cli/index.js dispatch SessionEnd (cwd: /home/sean/Documents/omg-harness)\nHook execution for SessionEnd: 1 hooks executed successfully, total duration: 1888ms\nCreated execution plan for SessionEnd: 1 hook(s) to execute in parallel\nExpanding hook command: bun dist/cli/index.js dispatch SessionEnd (cwd: /home/sean/Documents/omg-harness)\nHook execution for SessionEnd: 1 hooks executed successfully, total duration: 1844ms",
+      "endTime": 1774162307531
+    }
+  ],
+  "activeTaskIds": []
+}

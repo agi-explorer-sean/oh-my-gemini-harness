@@ -2,7 +2,7 @@
 
 exports[`generateModelConfig no providers available returns ULTIMATE_FALLBACK for all agents and categories when no providers 1`] = `
 {
-  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json",
   "agents": {
     "atlas": {
       "model": "google/gemini-2.5-flash-lite",
@@ -63,7 +63,7 @@ exports[`generateModelConfig no providers available returns ULTIMATE_FALLBACK fo
 
 exports[`generateModelConfig single native provider uses Gemini models when only Gemini is available 1`] = `
 {
-  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json",
   "agents": {
     "atlas": {
       "model": "google/gemini-3-pro-preview",
@@ -135,7 +135,7 @@ exports[`generateModelConfig single native provider uses Gemini models when only
 
 exports[`generateModelConfig single native provider uses Gemini models with isMax20 flag 1`] = `
 {
-  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json",
   "agents": {
     "atlas": {
       "model": "google/gemini-3-pro-preview",
@@ -207,7 +207,7 @@ exports[`generateModelConfig single native provider uses Gemini models with isMa
 
 exports[`generateModelConfig fallback providers uses Gemini Zen models when only Gemini Zen is available 1`] = `
 {
-  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json",
   "agents": {
     "atlas": {
       "model": "gemini/gemini-3-pro-preview",
@@ -279,7 +279,7 @@ exports[`generateModelConfig fallback providers uses Gemini Zen models when only
 
 exports[`generateModelConfig fallback providers uses Gemini Zen models with isMax20 flag 1`] = `
 {
-  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json",
   "agents": {
     "atlas": {
       "model": "gemini/gemini-3-pro-preview",
@@ -351,7 +351,7 @@ exports[`generateModelConfig fallback providers uses Gemini Zen models with isMa
 
 exports[`generateModelConfig mixed provider scenarios uses Gemini + Gemini Zen combination 1`] = `
 {
-  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json",
   "agents": {
     "atlas": {
       "model": "google/gemini-3-pro-preview",
@@ -423,7 +423,7 @@ exports[`generateModelConfig mixed provider scenarios uses Gemini + Gemini Zen c
 
 exports[`generateModelConfig mixed provider scenarios uses all providers together 1`] = `
 {
-  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json",
   "agents": {
     "atlas": {
       "model": "google/gemini-3-pro-preview",
@@ -495,7 +495,7 @@ exports[`generateModelConfig mixed provider scenarios uses all providers togethe
 
 exports[`generateModelConfig mixed provider scenarios uses all providers with isMax20 flag 1`] = `
 {
-  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json",
+  "$schema": "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json",
   "agents": {
     "atlas": {
       "model": "google/gemini-3-pro-preview",

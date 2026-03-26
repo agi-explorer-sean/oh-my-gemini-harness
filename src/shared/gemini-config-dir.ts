@@ -113,7 +113,7 @@ export function getGeminiConfigPaths(
     configJson: join(configDir, 'gemini.json'),
     configJsonc: join(configDir, 'gemini.jsonc'),
     packageJson: join(configDir, 'package.json'),
-    omgConfig: join(configDir, 'omg-harness.json'),
+    omgConfig: join(configDir, 'oh-my-gemini-harness.json'),
   };
 }
 

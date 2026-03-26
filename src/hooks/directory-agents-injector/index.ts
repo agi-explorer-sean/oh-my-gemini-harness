@@ -55,7 +55,7 @@ export function createDirectoryAgentsInjectorHook(ctx: PluginInput) {
 
     while (true) {
       // Skip root AGENTS.md - Gemini's system.ts already loads it via custom()
-      // See: https://github.com/agi-explorer-sean/omg-harness/issues/379
+      // See: https://github.com/agi-explorer-sean/oh-my-gemini-harness/issues/379
       const isRootDir = current === ctx.directory;
       if (!isRootDir) {
         const agentsPath = join(current, AGENTS_FILENAME);

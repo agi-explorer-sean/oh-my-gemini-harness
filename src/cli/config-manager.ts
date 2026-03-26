@@ -225,9 +225,9 @@ export async function addPluginToGeminiConfig(
     const plugins = config.plugin ?? [];
     const existingIndex = plugins.findIndex(
       (p) =>
-        p === 'omg-harness' ||
-        p.startsWith('omg-harness@') ||
-        p.includes('omg-harness'),
+        p === 'oh-my-gemini-harness' ||
+        p.startsWith('oh-my-gemini-harness@') ||
+        p.includes('oh-my-gemini-harness'),
     );
 
     if (existingIndex !== -1) {
@@ -375,7 +375,7 @@ export function writeOmgConfig(
     return {
       success: false,
       configPath: omgConfigPath,
-      error: formatErrorWithSuggestion(err, 'write omg-harness config'),
+      error: formatErrorWithSuggestion(err, 'write oh-my-gemini-harness config'),
     };
   }
 }
@@ -812,12 +812,12 @@ export function writeAbsolutePathConfigs(extDir: string): ConfigMergeResult {
   }
 
   const extensionConfig = {
-    name: 'omg-harness',
+    name: 'oh-my-gemini-harness',
     version: '0.1.0',
     description:
       'The Best AI Agent Harness - Batteries-Included Gemini CLI Plugin',
     mcpServers: {
-      'omg-harness': {
+      'oh-my-gemini-harness': {
         command: 'bun',
         args: [cliScript, 'mcp-server'],
         timeout: 900000,
@@ -861,13 +861,13 @@ export function detectCurrentConfig(): DetectedConfig {
 
   const geminiConfig = parseResult.config;
   const plugins = geminiConfig.plugin ?? [];
-  result.isInstalled = plugins.some((p) => p.startsWith('omg-harness'));
+  result.isInstalled = plugins.some((p) => p.startsWith('oh-my-gemini-harness'));
 
   if (!result.isInstalled) {
     return result;
   }
 
-  // Gemini CLI uses native authentication, so if omg-harness is installed,
+  // Gemini CLI uses native authentication, so if oh-my-gemini-harness is installed,
   // we can assume Gemini is available.
   result.hasGemini = true;
 

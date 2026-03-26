@@ -1,12 +1,12 @@
 {
-  "name": "omg-harness",
+  "name": "oh-my-gemini-harness",
   "version": "0.1.0",
   "description": "The Best AI Agent Harness - Batteries-Included Gemini CLI Plugin with Multi-Model Orchestration, Parallel Background Agents, and Crafted LSP/AST Tools",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "bin": {
-    "omg-harness": "./dist/cli/index.js"
+    "oh-my-gemini-harness": "./dist/cli/index.js"
   },
   "files": [
     "dist"
@@ -16,12 +16,12 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./schema.json": "./dist/omg-harness.schema.json"
+    "./schema.json": "./dist/oh-my-gemini-harness.schema.json"
   },
   "scripts": {
     "build": "bun build src/index.ts --outdir dist --target bun --format esm --external @ast-grep/napi && tsc --emitDeclarationOnly && bun build src/cli/index.ts --outdir dist/cli --target bun --format esm --external @ast-grep/napi && bun run build:schema",
     "build:all": "bun run build",
-    "build:schema": "bun run third_party/oh-my-opencode/script/build-schema.ts && mkdir -p dist && cp assets/oh-my-opencode.schema.json dist/omg-harness.schema.json",
+    "build:schema": "bun run third_party/oh-my-opencode/script/build-schema.ts && mkdir -p dist && cp assets/oh-my-opencode.schema.json dist/oh-my-gemini-harness.schema.json",
     "clean": "rm -rf dist",
     "prepublishOnly": "bun run clean && bun run build",
     "typecheck": "tsc --noEmit",
@@ -40,12 +40,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agi-explorer-sean/omg-harness.git"
+    "url": "git+https://github.com/agi-explorer-sean/oh-my-gemini-harness.git"
   },
   "bugs": {
-    "url": "https://github.com/agi-explorer-sean/omg-harness/issues"
+    "url": "https://github.com/agi-explorer-sean/oh-my-gemini-harness/issues"
   },
-  "homepage": "https://github.com/agi-explorer-sean/omg-harness#readme",
+  "homepage": "https://github.com/agi-explorer-sean/oh-my-gemini-harness#readme",
   "dependencies": {
     "@ast-grep/cli": "^0.40.0",
     "@ast-grep/napi": "^0.40.0",

@@ -237,7 +237,7 @@ describe("generateModelConfig", () => {
 
       // #then should include correct schema URL
       expect(result.$schema).toBe(
-        "https://raw.githubusercontent.com/agi-explorer-sean/omg-harness/master/assets/oh-my-gemini.schema.json"
+        "https://raw.githubusercontent.com/agi-explorer-sean/oh-my-gemini-harness/master/assets/oh-my-gemini.schema.json"
       )
     })
   })

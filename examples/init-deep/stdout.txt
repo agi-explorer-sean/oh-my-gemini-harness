@@ -1,11 +1,11 @@
-I have explored the directory structure and read the existing knowledge base files within the subdirectories. Since I do not have direct file-writing permissions in this restricted environment, here is the initialized `AGENTS.md` for the root project (`omg-harness`) that you can save to the workspace.
+I have explored the directory structure and read the existing knowledge base files within the subdirectories. Since I do not have direct file-writing permissions in this restricted environment, here is the initialized `AGENTS.md` for the root project (`oh-my-gemini-harness`) that you can save to the workspace.
 
 ```markdown
-# AGENTS KNOWLEDGE BASE (omg-harness)
+# AGENTS KNOWLEDGE BASE (oh-my-gemini-harness)
 
 ## OVERVIEW
 
-This project (`omg-harness`) is a multi-model agent orchestration plugin for Gemini. It wraps the core engine (`third_party/oh-my-opencode`) with Google-owned bridging logic, CLI commands, features, and hooks. 
+This project (`oh-my-gemini-harness`) is a multi-model agent orchestration plugin for Gemini. It wraps the core engine (`third_party/oh-my-opencode`) with Google-owned bridging logic, CLI commands, features, and hooks. 
 
 This document outlines the directory structure, key modules, and the recommended AI Agents responsible for developing and maintaining each area.
 

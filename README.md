@@ -52,7 +52,7 @@ OMG Harness is installed as a Gemini CLI extension. This allows its tools and ho
 The installer handles dependencies, build, config, and extension linking in one command:
 
 ```bash
-cd omg-harness/
+cd oh-my-gemini-harness/
 bun run src/cli/index.ts install
 ```
 
@@ -69,7 +69,7 @@ This will:
 If the automated installer doesn't work, follow these steps:
 
 ```bash
-cd omg-harness
+cd oh-my-gemini-harness
 
 # 1. Install dependencies
 BUN_CONFIG_REGISTRY=https://registry.npmjs.org bun install
@@ -122,28 +122,28 @@ This guides you through setting up ADC credentials, GCP project, and region. Aft
 ## Troubleshooting
 
 ### MCP Startup Failure
-If you see "mcp omg-harness startup failure" when starting Gemini, check the following:
+If you see "mcp oh-my-gemini-harness startup failure" when starting Gemini, check the following:
 
 1.  **Ensure you have built the project**: Run `bun run build` in the extension directory.
 2.  **Verify `bun` is in your PATH**: The MCP server is executed using `bun`.
-3.  **Check logs**: Look at the logs in your system temp directory (e.g., `/tmp/omg-harness.log` or `%TEMP%\omg-harness.log`).
+3.  **Check logs**: Look at the logs in your system temp directory (e.g., `/tmp/oh-my-gemini-harness.log` or `%TEMP%\oh-my-gemini-harness.log`).
 4.  **Absolute Paths**: Ensure you linked the extension correctly. If you moved the folder, you may need to `unlink` and `link` it again.
 5.  **Missing `dist/`**: If `dist/` doesn't exist, run `bun run build` first.
 6.  **NPM registry**: In restricted environments, set `BUN_CONFIG_REGISTRY=https://registry.npmjs.org` before `bun install`.
 
 ## Uninstallation
 
-To remove omg-harness:
+To remove oh-my-gemini-harness:
 
 1. **Uninstall the Gemini Extension**
 
    ```bash
-   gemini extensions uninstall omg-harness
+   gemini extensions uninstall oh-my-gemini-harness
    ```
 
 2. **Remove the plugin from your Gemini config (Legacy)**
 
-   Edit `~/.gemini/settings.json` or `~/.config/gemini/gemini.json` and remove the entry pointing to your local `omg-harness` directory from the `plugin` array.
+   Edit `~/.gemini/settings.json` or `~/.config/gemini/gemini.json` and remove the entry pointing to your local `oh-my-gemini-harness` directory from the `plugin` array.
 
 ## Features
 **Quick Overview:**
