@@ -23,4 +23,4 @@ yarn.lock
 .analysis/
 .github/
 .todos/
-.sisyphus/
+.sisyphus/github_deploy_key
