@@ -2,11 +2,12 @@
   "name": "oh-my-gemini-harness",
   "version": "0.1.0",
   "description": "The Best AI Agent Harness - Batteries-Included Gemini CLI Plugin",
+  "main": "dist/index.js",
   "mcpServers": {
     "oh-my-gemini-harness": {
       "command": "bun",
       "args": [
-        "/home/sean/Documents/oh-my-gemini-harness/dist/cli/index.js",
+        "${extensionPath}${/}dist${/}cli${/}index.js",
         "mcp-server"
       ],
       "timeout": 900000
