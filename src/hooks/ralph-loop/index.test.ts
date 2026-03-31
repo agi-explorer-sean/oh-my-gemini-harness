@@ -200,7 +200,7 @@ Build a REST API`
       // given - active loop
       const state: RalphLoopState = {
         active: true,
-        iteration: 1,
+        iteration: 2,
         max_iterations: 10,
         completion_promise: "DONE",
         started_at: new Date().toISOString(),
@@ -228,7 +228,7 @@ Build a REST API`
       // given - active loop
       const state: RalphLoopState = {
         active: true,
-        iteration: 1,
+        iteration: 2,
         max_iterations: 10,
         completion_promise: "FINISHED",
         started_at: new Date().toISOString(),
@@ -328,7 +328,7 @@ Build a REST API`
       // given - active ultrawork loop with completion
       const state: RalphLoopState = {
         active: true,
-        iteration: 1,
+        iteration: 2,
         max_iterations: 10,
         completion_promise: "DONE",
         started_at: new Date().toISOString(),
@@ -354,7 +354,7 @@ Build a REST API`
       // given - non-ultrawork loop with completion
       const state: RalphLoopState = {
         active: true,
-        iteration: 1,
+        iteration: 2,
         max_iterations: 10,
         completion_promise: "DONE",
         started_at: new Date().toISOString(),

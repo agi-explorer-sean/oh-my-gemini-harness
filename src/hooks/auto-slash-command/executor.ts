@@ -221,11 +221,10 @@ async function formatCommandTemplate(
   const resolvedContent = await resolveCommandsInText(withFileRefs);
 
   let finalContent = resolvedContent.trim();
-  if (args) {
-    finalContent = finalContent
-      .replace(/\$ARGUMENTS/g, args)
-      .replace(/\$\{user_message\}/g, args);
-  }
+  const substitutionArgs = args || '';
+  finalContent = finalContent
+    .replace(/\$ARGUMENTS/g, substitutionArgs)
+    .replace(/\$\{user_message\}/g, substitutionArgs);
 
   sections.push(finalContent);
 

@@ -223,9 +223,8 @@ async function formatLoadedCommand(
   const resolvedContent = await resolveCommandsInText(withFileRefs);
 
   let finalContent = resolvedContent.trim();
-  if (userMessage) {
-    finalContent = finalContent.replace(/\$\{user_message\}/g, userMessage);
-  }
+  const subMsg = userMessage || '';
+  finalContent = finalContent.replace(/\$\{user_message\}/g, subMsg);
 
   sections.push(finalContent);
 

@@ -19,6 +19,8 @@ export { readState, writeState, clearState, incrementIteration } from "./storage
 
 const CONTINUATION_PROMPT = `${SYSTEM_DIRECTIVE_PREFIX} - RALPH LOOP {{ITERATION}}/{{MAX}}]
 
+(Note: The "Agent execution blocked" and "This request failed" warnings above are expected during a Ralph Loop iteration. This is how the system forces you to keep working.)
+
 Your previous attempt did not output the completion promise. Continue working on the task.
 
 IMPORTANT:
