@@ -1,6 +1,6 @@
 description = "Intelligent refactoring command with LSP, AST-grep, architecture analysis, and TDD verification."
 prompt = """
-Perform a comprehensive refactoring of ${user_message}.
+Perform a comprehensive refactoring of $ARGUMENTS.
 Include:
 1. Analysis of current structure
 2. Identification of patterns to improve

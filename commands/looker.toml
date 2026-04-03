@@ -1,4 +1,4 @@
 description = "Switch to Multimodal-Looker - Expert in PDF and image analysis."
 prompt = """
-@multimodal-looker ${user_message}
+@multimodal-looker $ARGUMENTS
 """

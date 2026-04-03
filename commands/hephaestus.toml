@@ -1,4 +1,4 @@
 description="Switch to Hephaestus - Autonomous deep worker."
 prompt = """
-@hephaestus ${user_message}
+@hephaestus $ARGUMENTS
 """

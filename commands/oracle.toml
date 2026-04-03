@@ -1,4 +1,4 @@
 description="Switch to Oracle - Strategic technical advisor."
 prompt = """
-@oracle ${user_message}
+@oracle $ARGUMENTS
 """

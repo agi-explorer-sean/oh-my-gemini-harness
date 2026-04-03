@@ -2,7 +2,6 @@
   "name": "oh-my-gemini-harness",
   "version": "0.1.0",
   "description": "The Best AI Agent Harness - Batteries-Included Gemini CLI Plugin",
-  "main": "dist/index.js",
   "mcpServers": {
     "oh-my-gemini-harness": {
       "command": "bun",

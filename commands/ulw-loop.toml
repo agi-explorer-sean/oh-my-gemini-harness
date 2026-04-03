@@ -2,7 +2,7 @@ description = "Start ultrawork loop - relentless deep work until completion."
 prompt = """
 You are starting an Ultrawork Loop.
 <user-task>
-${user_message}
+$ARGUMENTS
 </user-task>
 Engage maximum intensity: parallel background agents, exhaustive research, and relentless implementation until done.
 """

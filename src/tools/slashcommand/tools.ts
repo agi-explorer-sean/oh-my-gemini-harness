@@ -224,7 +224,9 @@ async function formatLoadedCommand(
 
   let finalContent = resolvedContent.trim();
   const subMsg = userMessage || '';
-  finalContent = finalContent.replace(/\$\{user_message\}/g, subMsg);
+  finalContent = finalContent
+    .replace(/\$ARGUMENTS/g, subMsg)
+    .replace(/\$\{user_message\}/g, subMsg);
 
   sections.push(finalContent);
 

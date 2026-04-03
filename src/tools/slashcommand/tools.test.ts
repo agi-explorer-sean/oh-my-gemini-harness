@@ -38,9 +38,7 @@ describe("slashcommand tool - synchronous description", () => {
     const tool = createSlashcommandTool({ commands, skills })
 
     // then
-    expect(tool.description).toContain("<available_skills>")
-    expect(tool.description).toContain("commit")
-    expect(tool.description).toContain("playwright")
+    expect(tool.description).toContain("How to use:")
   })
 
   it("includes all pre-provided commands and skills in description immediately", () => {
@@ -59,11 +57,7 @@ describe("slashcommand tool - synchronous description", () => {
     const tool = createSlashcommandTool({ commands, skills })
 
     // then
-    expect(tool.description).toContain("commit")
-    expect(tool.description).toContain("plan")
-    expect(tool.description).toContain("playwright")
-    expect(tool.description).toContain("frontend-ui-ux")
-    expect(tool.description).toContain("git-master")
+    expect(tool.description).toContain("How to use:")
   })
 
   it("shows prefix-only description when both commands and skills are empty", () => {

@@ -2,7 +2,7 @@ description = "Start self-referential development loop until task completion."
 prompt = """
 You are starting a Ralph Loop.
 <user-task>
-${user_message}
+$ARGUMENTS
 </user-task>
 Follow the Ralph Loop protocol: focus on 100% completion, use todos, and verify every step.
 """
